@@ -1,0 +1,29 @@
+# LangChain environment requirements
+# Python 3.10+ recommended
+
+# Core LangChain
+langchain
+langchain-core
+langchain-community
+
+# Google Gemini / Google Generative AI
+langchain-google-genai
+google-generativeai
+
+# Mistral AI
+langchain-mistralai
+mistralai
+
+# Groq
+langchain-groq
+groq
+
+# HUGGINGFACE
+langchain-huggingface
+
+# Environment variables
+python-dotenv
+
+# Common dependencies useful in LangChain projects
+pydantic
+requests
