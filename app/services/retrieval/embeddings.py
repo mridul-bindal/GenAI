@@ -1,11 +1,13 @@
 import time 
 import logfire
-from langchain_google_genai import GooogleGenerativeAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from app.config import settings
 
 BATCH_SIZE = 50
 _GEMINI_DIM = 3072
 _FALLBACK_DIM = 768 ##all-mpnet-base-v2
+_active_model = None
+_model_type = None
 
 def _probe_gemini():
     """Try one embed call to verify Gemini is reachable. Returns model or None."""
